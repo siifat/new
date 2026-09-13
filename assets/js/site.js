@@ -82,7 +82,7 @@
     return (
       '<details class="group"' + open + ">" +
         '<summary class="group-head">' +
-          '<span class="group-chev">▾</span>' +
+          '<span class="chev">' + CHEV_SVG + "</span>" +
           '<div class="group-title-wrap">' +
             "<h2>" + esc(g.title || "Untitled") + "</h2>" +
             (g.note ? "<p>" + esc(g.note) + "</p>" : "") +

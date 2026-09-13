@@ -1,0 +1,55 @@
+/* =========================================================
+   admin/admin.css — layout overrides for the standalone page.
+   Loaded AFTER assets/css/styles.css. Only touches layout,
+   not the components themselves.
+   ========================================================= */
+
+body.admin-page {
+  background: var(--bg);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.admin-page .admin-panel {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  border-left: 0;
+  background: var(--bg);
+  animation: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sticky head so the tab bar stays visible while scrolling. */
+.admin-page .admin-head {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Sticky foot so Download is always reachable. */
+.admin-page .admin-foot {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* Centre the pane at a readable width; the panel itself is full-bleed. */
+.admin-page .admin-body {
+  padding: 0;
+}
+.admin-page .admin-pane {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+}
+
+/* The public-site header/footer classes are not used here,
+   but body still inherits from styles.css — undo the
+   public min-height/62vh rule from the main sheet. */
+.admin-page main { min-height: 0; padding: 0; }
+
+/* The old overlay animation keyframe is irrelevant now. */
+@keyframes admin-in { from {} to {} }

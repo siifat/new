@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admin — local editor</title>
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css" />
+<link rel="stylesheet" href="admin.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315181d'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+<script>
+  try {
+    var t = localStorage.getItem('site-theme');
+    if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  } catch (e) {}
+</script>
+</head>
+<body class="admin-page">
+
+  <div class="admin-panel" role="application">
+
+    <header class="admin-head">
+      <h2>Site admin</h2>
+      <span class="spacer"></span>
+      <a class="btn" href="../index.html">View site</a>
+      <button class="btn" id="themeBtn" type="button">Theme</button>
+    </header>
+
+    <nav class="admin-tabs" role="tablist" id="adminTabs" aria-label="Admin sections"></nav>
+
+    <main class="admin-body">
+      <div class="admin-pane" id="adminPane"></div>
+    </main>
+
+    <footer class="admin-foot">
+      <button class="btn btn-primary" id="adminDownload" type="button">Download site-data.js</button>
+      <button class="btn" id="adminReset" type="button">Discard changes</button>
+      <span class="admin-status" id="adminStatus">Editing in memory only.</span>
+    </footer>
+
+  </div>
+
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../assets/js/materials-index.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

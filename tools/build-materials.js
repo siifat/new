@@ -29,6 +29,13 @@ const humanSize = (b) =>
   : b < 1048576 ? (b / 1024).toFixed(0) + " KB"
   : (b / 1048576).toFixed(1) + " MB";
 
+
+/* Encode each path segment individually so "/" separators survive
+   but spaces, %, #, ?, etc. inside filenames become valid escapes. */
+const encodePath = (p) =>
+  String(p).split("/").map(encodeURIComponent).join("/");
+
+
 function walk(dir, base) {
   const out = [];
   for (const name of fs.readdirSync(dir)) {
@@ -72,7 +79,7 @@ function buildCourse(courseDir) {
       const st = fs.statSync(path.join(courseDir, e.name));
       return {
         name: e.name,
-        href: "materials/" + slug + "/" + e.name,
+        href: "materials/" + encodeURIComponent(slug) + "/" + encodeURIComponent(e.name),
         size: humanSize(st.size),
         ext: path.extname(e.name).slice(1).toLowerCase()
       };
@@ -95,7 +102,7 @@ function buildCourse(courseDir) {
         files.push({
           name: n,
           rel,
-          href: "materials/" + slug + "/" + rel,
+          href: "materials/" + encodeURIComponent(slug) + "/" + encodePath(rel),
           size: humanSize(st.size),
           ext: path.extname(n).slice(1).toLowerCase()
         });

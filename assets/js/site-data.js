@@ -10,22 +10,22 @@ const SITE_DATA = {
     "socials": [
       {
         "label": "GitHub",
-        "url": "https://github.com/yourusername"
+        "url": "https://github.com/siifat"
       },
       {
         "label": "LinkedIn",
-        "url": "https://linkedin.com/in/yourusername"
+        "url": "https://linkedin.com/in/sifatullah"
       },
       {
         "label": "Email",
-        "url": "mailto:you@example.com"
+        "url": "mailto:sifatullah.connect@gmail.com"
       }
     ]
   },
   "home": {
     "kicker": "CSE Undergraduate · United International University",
-    "headline": "Hi, I'm Your Name.",
-    "lede": "I build small, fast things for the web and write about what I learn along the way.",
+    "headline": "Hi, I'm Sifat Ullah.",
+    "lede": "I like building small, minimal web apps and tools. I belive in KISS (Keep It Simple, Stupid) and Do one Thing well.",
     "actions": [
       {
         "label": "UIU Resources",
@@ -33,7 +33,7 @@ const SITE_DATA = {
         "primary": true
       },
       {
-        "label": "Read the blog",
+        "label": "Read my blog",
         "href": "blogs.html"
       },
       {
@@ -43,12 +43,12 @@ const SITE_DATA = {
     ],
     "facts": [
       {
-        "k": "Program",
-        "v": "BSc in CSE"
-      },
-      {
         "k": "University",
         "v": "UIU"
+      },
+      {
+        "k": "Program",
+        "v": "BSc in CSE"
       },
       {
         "k": "Trimester",
@@ -59,7 +59,7 @@ const SITE_DATA = {
         "v": "Web · Testing · Databases"
       },
       {
-        "k": "Status",
+        "k": "Job Status",
         "v": "Open to internships"
       }
     ],
@@ -78,8 +78,8 @@ const SITE_DATA = {
       }
     ],
     "now": [
-      "Working through the CSE 4495 (STQA) course materials.",
-      "Rebuilding my notes into a searchable format."
+      "Rebuilding my personal website.",
+      "Probably wasting time on a side project.",
     ]
   },
   "resources": {
@@ -103,9 +103,9 @@ const SITE_DATA = {
             ]
           },
           {
-            "name": "UMS",
-            "desc": "Student portal for attendance and grades.",
-            "href": "https://ums.uiu.ac.bd",
+            "name": "eLMS",
+            "desc": "Student portal for course materials.",
+            "href": "https://elms.uiu.ac.bd",
             "tags": [
               "Official"
             ]
@@ -176,16 +176,20 @@ const SITE_DATA = {
     "intro": "Answers to the questions I get most often, plus the fastest ways to reach me.",
     "faqs": [
       {
+        "q": "How can I get in touch with you?",
+        "a": "<p>You can reach me via email or LinkedIn.</p>"
+      },
+      {
         "q": "Can I use your notes and slides?",
         "a": "<p>Yes. Everything on the UIU Resources page is shared so that other students can use it.</p>"
       },
       {
         "q": "Some resource links are broken.",
-        "a": "<p>Send me the course code and file name. I usually fix link rot within a day.</p>"
+        "a": "<p>Email me the course code and file name. I usually fix broken links within a day.</p>"
       },
       {
         "q": "Will you solve my assignment?",
-        "a": "<p>No. Happy to explain a concept or review your approach.</p>"
+        "a": "<p>Nope. Happy to explain a concept or review your approach though.</p>"
       },
       {
         "q": "How is this site built?",
@@ -195,18 +199,18 @@ const SITE_DATA = {
     "contacts": [
       {
         "label": "Email",
-        "value": "you@example.com",
-        "href": "mailto:you@example.com"
+        "value": "sifatullah.connect@gmail.com",
+        "href": "mailto:sifatullah.connect@gmail.com"
       },
       {
         "label": "GitHub",
-        "value": "github.com/yourusername",
-        "href": "https://github.com/yourusername"
+        "value": "github.com/siifat",
+        "href": "https://github.com/siifat"
       },
       {
         "label": "LinkedIn",
-        "value": "linkedin.com/in/yourusername",
-        "href": "https://linkedin.com/in/yourusername"
+        "value": "linkedin.com/in/sifatullah",
+        "href": "https://linkedin.com/in/sifatullah"
       }
     ]
   }

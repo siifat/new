@@ -115,7 +115,7 @@
       ).join("");
 
       return (
-        '<details class="subgroup" open>' +
+        '<details class="subgroup">' +
           '<summary class="subgroup-head">' +
             '<span class="chev">' + CHEV_SVG + "</span>" +
             '<div class="group-title-wrap"><h3>' + esc(s.name) + "</h3></div>" +

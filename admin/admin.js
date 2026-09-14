@@ -135,7 +135,6 @@
     const f = $("#sFields", container);
     f.innerHTML =
       field("Site name (header + footer)", "name", data.site.name) +
-      field("Initials in the logo square", "initials", data.site.initials) +
       field("Footer note", "footerNote", data.site.footerNote);
     bindObject(data.site, f);
 

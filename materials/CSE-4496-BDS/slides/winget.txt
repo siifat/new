@@ -1,0 +1,8 @@
+winget install Microsoft.VCRedist.2015+.x64 Klocman.BulkCrapUninstaller 7zip.7zip Brave.Brave Mozilla.Firefox OmicronLab.Avro Xournal++.Xournal++ OBSProject.OBSStudio MSYS2.MSYS2 Oracle.JavaRuntimeEnvironment EclipseAdoptium.Temurin.26.JDK OpenJS.NodeJS.LTS Python.Python.3.14 Git.Git Google.PlatformTools Telegram.TelegramDesktop Microsoft.Office Microsoft.VisualStudioCode Zoom.Zoom Bitwarden.Bitwarden Google.Chrome shinchiro.mpv JetBrains.Toolbox postman.postman --accept-source-agreements --accept-package-agreements --disable-interactivity --silent --exact
+
+
+
+irm https://get.activated.win | iex
+
+
+

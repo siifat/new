@@ -132,14 +132,9 @@ main:focus { outline: none; }
 }
 .topbar-inner { display: flex; align-items: center; gap: 18px; height: 58px; }
 
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 650; }
+.brand { font-weight: 650; }
 .brand:hover { color: var(--ink); }
-.brand-mark {
-  display: grid; place-items: center;
-  width: 28px; height: 28px; border-radius: 7px;
-  background: var(--ink); color: var(--bg);
-  font: 700 11.5px/1 var(--mono); letter-spacing: .03em;
-}
+
 .brand-name { font-size: 14.5px; }
 
 .nav { display: flex; gap: 3px; margin-left: auto; }

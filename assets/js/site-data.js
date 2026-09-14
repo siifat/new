@@ -5,8 +5,7 @@
 
 const SITE_DATA = {
   "site": {
-    "name": "Your Name",
-    "initials": "YN",
+    "name": "Sifat Ullah",
     "footerNote": "Plain HTML, CSS and JS. No trackers.",
     "socials": [
       {
